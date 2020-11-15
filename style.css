@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.window-control
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background:#111;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-app-region: drag;
+}
+
+.window-control #logo
+{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.window-control .controlls
+{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    -webkit-app-region: no-drag;
+    margin-right: 10px;
+  
+}
+
+.window-control .controlls span
+{
+    height: 100%;
+    width: 30px;
+    font-weight: normal;
+    color:#fff;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+   border-radius: 50%;
+   cursor: pointer;
+    transition: 0.5s all ease;
+   
+
+}
+
+.window-control .controlls span:hover
+{
+    background:orangered;
+    color: #fff;
+    
+}
+
+.input--text
+{
+    width: 100%;
+    height:70px;
+    background:#222;
+    display:flex;
+    justify-content: center;
+}
+.input--text input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 60px;
+    background:#111;
+}
+.buttons .button{
+    margin: 4px;
+    border: none;
+    outline:none;
+    background: #000;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+.buttons .different{
+    background:orangered;
+    color: #fff;
+}
+.buttons .button:nth-child(8),
+.buttons .button:nth-child(12),
+.buttons .button:nth-child(16)
+{
+    background: #fff;
+    color: #000;
+
+}
